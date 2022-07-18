@@ -53,10 +53,11 @@ header button {
 }
 
 .popup {
-  background: black;
+  background: white;
   position: absolute;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Pirate_Flag_of_Jack_Rackham.svg/744px-Pirate_Flag_of_Jack_Rackham.svg.png");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_MRACheUO_Tie6FKf9zg4fysS-_Q6GTrJQ&usqp=CAU");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  /* font-size: 4rem; */
 }
