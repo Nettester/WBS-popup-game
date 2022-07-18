@@ -4,14 +4,16 @@ import Popup from './Popup';
 
 
 function App() {
+  const maxTime = 10
+
   const [position, setPosition] = useState()
 
   const [points, setPoints] = useState(0)
 
   const [seconds, setSeconds] = useState(0);
 
-  const [timerActive, setTimerActive] = useState(false)
 
+  
   useEffect(() => {
     if (seconds >= 10) return console.log("Gameover")
 
@@ -25,10 +27,12 @@ function App() {
 
 
 
+
+
   const onClick = e => {
     e.preventDefault()
 
-    if(seconds >= 10) return console.log("gameover")
+    if(seconds >= maxTime) return console.log("gameover")
 
     getRandomPosition()
 
@@ -79,7 +83,7 @@ function App() {
     newGame(null)
   }, [])
 
-  const renderGame = seconds >= 10
+  const renderGame = seconds >= maxTime
   ? <div className='gameover'><h1>GAME OVER</h1></div>
   : ( <Popup
     className="popup"
@@ -92,7 +96,7 @@ function App() {
       <header>
         <h1>Pop-up Game</h1>
         <button onClick={newGame}><h2>START NEW GAME</h2></button>
-        <h2>Seconds: {seconds} / 10</h2>
+        <h2>Seconds: {seconds} / {maxTime}</h2>
 
         <h2>Points: {points}</h2>
       </header>
