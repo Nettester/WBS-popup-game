@@ -5,7 +5,7 @@ const Popup = ({ style, onClick }) => {
         className="popup"
         style={style}
         onClick={onClick}
-    >Click here!</button>)
+    ></button>)
 };
 
 export default Popup;
