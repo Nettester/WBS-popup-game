@@ -12,17 +12,14 @@ body {
 * {
   outline: 2px solid black;
   box-sizing: border-box;
-} 
-
-.App {  
 }
 
 header {
   height: 15vh;
   display: flex;
   flex-direction: column;
-  
 }
+
 main{
   height: 85vh;
   position: relative;
@@ -34,5 +31,4 @@ h1 {
 
 .popup {
   position: absolute;
-  left: 10px;
 }
