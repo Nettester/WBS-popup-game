@@ -1,7 +1,11 @@
 import React from "react";
 
-const Popup = () => {
-    return (<button style = {{left:"10px"}}>Click here!</button>)
+const Popup = ({ style, onClick }) => {
+    return (<button
+        className="popup"
+        style={style}
+        onClick={onClick}
+    >Click here!</button>)
 };
 
 export default Popup;
