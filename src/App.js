@@ -3,7 +3,7 @@ import Popup from './Popup';
 
 
 function App() {
-  const popupStyle = {left:"10px"};
+  
   return (
     <>
       <header>
@@ -11,7 +11,7 @@ function App() {
         <button>Start</button>
       </header>
       <main> 
-        <Popup className="popup" style={popupStyle}/>
+        <Popup />
       </main>
     </>
   );
